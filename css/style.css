@@ -1,0 +1,416 @@
+
+body{
+overflow-x: hidden;
+font-family: 'Roboto', sans-serif;
+background-color: #e9ecef;
+}
+
+
+.offset:before{
+display: block;
+content: "";
+height: 4rem;
+margin-top: -4rem;
+}
+
+/*---------------------------------------------------------------- Navigation ---------------------------------------------------*/
+
+.navbar{
+text-transform: uppercase;
+font-weight: 700;
+font-size: 1rem;
+letter-spacing: .1rem;
+background-color: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-brand img{
+height: 4rem;
+}
+
+.navbar-nav li {
+padding-right: 1.1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+color: #fff;
+padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+color: #b20000;
+}
+
+.dropdown-menu{
+font-family: 'Roboto', sans-serif;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 1rem;
+letter-spacing: .1rem;
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dropdown-menu a {
+color:#fff;
+}
+
+.dropdown-menu a:hover{
+    color:#b20000;
+}
+
+.dropdown-menu a:active{
+    color:#b20000;
+}
+
+
+.nav-link {
+color: #fff;
+}
+
+
+/*----------------------------------------------------------------- Landing Page -------------------------------------------------------*/
+
+.home-inner {
+background-image: url(../img/bg.png);
+}
+
+.caption{
+width: 100%;
+max-width: 100%;
+position:absolute;
+top:38%;
+z-index: 1;
+color: #fff;
+text-transform: uppercase;
+}
+
+.caption h1 {
+font-size: 3.8rem;
+font-weight: 700;
+letter-spacing: .3rem;
+text-shadow: .1rem .1rem .8rem black;
+padding-bottom: 1rem;
+}
+
+.caption h3{
+font-size: 1.5rem;
+text-shadow: .1rem .1rem .5rem black;
+}
+
+.rowdark2{
+background-color: rgba(0, 0, 0, 0.50);
+}
+
+/*----------------------------------------------------- ANIMATED MOUSE SCROLL -------------------------------------------*/
+
+.mouse{
+width: 100%;
+max-width: 100%;
+position:absolute;
+top:88%;
+z-index: 1;
+bottom:0;
+}
+
+.mouseDown{
+font-size: 0.9em; /* CONTROL MOUSE SIZE */
+border: 2px solid rgba(255,255,255,1);
+display: block;
+width: 1.7em;
+height: 2.8em;
+border-radius: 0.9em;
+margin: 0 auto;
+text-decoration: none;
+transition: border 0.2s ease-out;
+}
+
+.mouseDown:hover {border: 2px solid rgba(255,255,255,0.7);}
+
+.mouseDown span{
+display: block;
+background: #fff;
+width: 0.2em;
+height: 0.3em;
+margin: 0.7em auto 0;
+border-radius: 0.4em;
+}
+
+.mouseDown span{
+-webkit-animation-name: scroll;
+animation-name: scroll;
+-webkit-animation-duration: 1.5s;
+animation-duration: 1.5s;
+-webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+will-change: transform;
+}
+
+.mouseDown:hover span{
+-webkit-animation-duration: 0.7s;
+animation-duration: 0.7s;
+}
+
+@-webkit-keyframes scroll{
+0%, 20% {
+-webkit-transform: translateY(0) scaleY(1);
+}
+10% {
+opacity: 1;
+}
+100% {
+-webkit-transform: translateY(1.2em) scaleY(1.5);
+opacity: 0.01;
+}
+}
+
+@keyframes scroll{
+0%, 20% {
+transform: translateY(0) scaleY(1);
+}
+10% {
+opacity: 1;
+}
+100% {
+transform: translateY(1.2em) scaleY(1.5);
+opacity: 0.01;
+}
+}
+
+
+/*----------------------------------------------------------------- Button -----------------------------------------------------*/
+
+.narrow{
+width: 100%;
+margin: 1.5rem auto;
+padding-top: 0rem;
+}
+
+.narrow h1{
+font-size: 2.4rem;
+}
+
+.btn-secondary {
+border-width: inherit;
+border-radius: 5px;
+padding: .8rem 1.2rem;
+font-size: 1.2rem;
+margin: -1.5rem auto;
+text-transform: uppercase;
+border-color: #b20000;
+background-color: #b20000;
+color: white;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+border-color: #7f0000;
+background-color: #7f0000;
+color: white;
+}
+
+
+
+
+/*---About us ---*/
+
+.jumbotron{
+margin-bottom: 0;
+padding: 1rem 0 1rem;
+border-radius: 0;
+}
+
+.jumbotron.pag{
+margin-bottom: 0;
+margin-top:5%;
+padding: 1rem 0 1rem;
+border-radius: 0;
+}
+
+.jumbotron.special{
+margin-top: -100px;
+padding: 1rem 0 1rem;
+border-radius: 0; 
+}
+
+h3.heading {
+font-size: 1.9rem;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 1.9rem;
+}
+
+.heading-underline{
+width: 9rem;
+height: .2rem;
+background-color: #cc0000;
+margin: 0 auto 0.5rem;
+}
+
+.textDespre{
+font-family: 'Roboto', sans-serif;
+font-size: 1.1rem;
+}
+
+/*------------------*/
+
+/*---Services---*/
+
+.fixed{
+background-image: url(../img/bg.png);
+z-index: -1;
+}
+
+.dark{
+background-color: rgba(0, 0, 0, 0.50);
+color:#fff;
+padding: 5rem 2rem;
+}
+
+.fixed-background h3{
+margin-top: 0rem;
+}
+
+/*---------------*/
+
+/*---Locations---*/
+
+.clients img{
+width: 60%;
+border-radius: 5px;
+border-style:solid;
+border-color: #7f0000;
+border-width: 5px 5px;
+transition: all 0.5s;
+}
+
+.clients.special img{
+width: 52%;
+border-radius: 5px;
+border-style:solid;
+border-color: #7f0000;
+border-width: 5px 5px;
+transition: all 0.5s;
+}
+
+
+.clients img:hover{
+transform: scale(1.1);
+}
+
+.clients h3{
+font-size: 20px;
+margin-top:30px;
+font-family: 'Roboto', sans-serif;
+}
+
+.clients a{
+    color:#cc0000;
+}
+
+.clients a:hover{
+    color: #7f0000;
+}
+
+/*--------------------*/
+
+/*--Contact Section--*/
+
+footer{
+background-color: #7f0000;
+color: #fff;
+padding: 2rem 0 2rem;
+}
+
+footer p{
+font-size: 1.1rem;
+}
+
+footer a {
+color: #fff;   
+}
+
+hr.socket{
+width: 100%;
+border-top: .2rem solid #fff;
+margin-top: 3rem;
+}
+/*---------------------*/
+
+
+/*---Media queries ---*/
+
+@media (max-width: 767px) {
+
+.caption h1{
+font-size: 2.3rem;
+letter-spacing: .15rem;
+padding-bottom: .5rem;
+}
+
+.caption h3{
+font-size: 1.2rem;
+padding-bottom: 1.2rem;
+}
+
+.btn-md{
+font-size: 1rem;
+}
+
+.narrow h1{
+font-size: 1.5rem;
+}
+
+.clients img{
+max-width: 100%;
+display: block;
+margin:0 auto;
+}
+
+.clients.special img{
+max-width: 100%;
+display: block;
+margin:0 auto;
+}
+
+.clock span {
+display: block;
+font-size: 2rem;
+}
+
+ul {
+padding-right: 40px;
+}
+
+.textDespre{
+font-family: 'Roboto', sans-serif;
+font-size: 0.85rem;
+}
+
+}
+
+/*-------------*/
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
